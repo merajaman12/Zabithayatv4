@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f3f8;
+  color: #151629;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+main {
+  width: min(1000px, 94vw);
+  margin: 40px auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e6ef;
+  border-radius: 22px;
+  padding: 28px;
+  margin-bottom: 18px;
+  box-shadow: 0 15px 40px #2221;
+}
+
+#login {
+  max-width: 430px;
+  margin: 90px auto;
+}
+
+h1 {
+  margin: 5px 0 10px;
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 28px;
+}
+
+.muted,
+p {
+  color: #77798a;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddde7;
+  border-radius: 11px;
+  font: inherit;
+  margin-top: 7px;
+}
+
+label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #606274;
+}
+
+button {
+  border: 0;
+  background: #6557f5;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.post {
+  border: 1px solid #e8e8ef;
+  border-radius: 18px;
+  padding: 18px;
+  margin: 12px 0;
+}
+
+.posttop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.post textarea {
+  width: 100%;
+  margin-top: 7px;
+  border: 1px solid #dddde7;
+  border-radius: 11px;
+  padding: 12px;
+  font: inherit;
+}
+
+.media {
+  margin-top: 10px;
+  max-width: 220px;
+  max-height: 130px;
+  border-radius: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+small {
+  color: #6557f5;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#loginMsg,
+#saveMsg {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .two,
+  .postgrid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
