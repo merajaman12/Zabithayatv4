@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — Zabit Hayat Tele</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<main id="app">
+
+  <!-- LOGIN -->
+  <section id="login" class="card">
+    <h1>Admin Login</h1>
+
+    <p>Sign in to manage Zabit Hayat Tele.</p>
+
+    <input
+      id="email"
+      type="email"
+      placeholder="Email"
+    >
+
+    <input
+      id="password"
+      type="password"
+      placeholder="Password"
+    >
+
+    <button id="loginBtn">
+      Sign in
+    </button>
+
+    <p id="loginMsg"></p>
+  </section>
+
+
+  <!-- ADMIN PANEL -->
+  <section id="panel" class="hidden">
+
+    <header>
+      <div>
+        <small>PRIVATE ADMIN</small>
+        <h1>Manage website</h1>
+      </div>
+
+      <button id="logout">
+        Sign out
+      </button>
+    </header>
+
+
+    <!-- WEBSITE SETTINGS -->
+    <div class="card">
+
+      <h2>Website & Purchase CTA</h2>
+
+      <div class="two">
+
+        <label>
+          Website name
+          <input id="siteName">
+        </label>
+
+        <label>
+          Description
+          <input id="description">
+        </label>
+
+        <label>
+          CTA title
+          <input id="purchaseTitle">
+        </label>
+
+        <label>
+          CTA description
+          <input id="purchaseDescription">
+        </label>
+
+        <label>
+          Purchase link
+          <input id="purchaseLink">
+        </label>
+
+      </div>
+
+
+      <h3>Social links</h3>
+
+      <div class="two">
+
+        <label>
+          Telegram
+          <input id="telegram">
+        </label>
+
+        <label>
+          Pinterest
+          <input id="pinterest">
+        </label>
+
+        <label>
+          VK
+          <input id="vk">
+        </label>
+
+        <label>
+          Facebook Page
+          <input id="facebook">
+        </label>
+
+      </div>
+
+
+      <button id="saveSettings">
+        Save settings
+      </button>
+
+      <span id="saveMsg"></span>
+
+    </div>
+
+
+    <!-- POSTS -->
+    <div class="card">
+
+      <h2>8 Posts</h2>
+
+      <p class="muted">
+        Upload images or videos directly to Supabase Storage.
+      </p>
+
+      <div id="posts"></div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- SUPABASE -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- WEBSITE CONFIG -->
+<script src="../config.js"></script>
+
+<!-- ADMIN JAVASCRIPT -->
+<script src="admin.js"></script>
+
+</body>
+</html>
